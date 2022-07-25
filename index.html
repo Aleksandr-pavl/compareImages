@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Поиск дубликатов фотографий</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+  <main>
+    <section>
+      <h1>Шаг 1 - Выбор папки</h1>
+      <h3>Выберите папку в которой нужно найти и удалить дубликаты</h3>
+      <form action="upload.php" method="post" enctype="multipart/form-data">
+        <input type="file" name="file[]" id="upload-files" webkitdirectory directory multiple/>
+        <p><input type="submit" value="Далее"></p>
+      </form>
+    </section>
+  </main>
+</body>
